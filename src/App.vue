@@ -2,11 +2,21 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/newPage2">About</router-link>
     </div>
+    <keep-alive>
     <router-view/>
+    </keep-alive>
   </div>
 </template>
+
+<script>
+export default {
+  beforeDestroy () {
+    console.log('溜了溜了')
+  }
+}
+</script>
 
 <style lang="less">
 #app {

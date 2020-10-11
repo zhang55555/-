@@ -13,6 +13,9 @@ export default {
   name: 'Home',
   components: {
     HelloWorld
+  },
+  beforeDestroy () {
+    console.log('要销毁了2')
   }
 }
 </script>
